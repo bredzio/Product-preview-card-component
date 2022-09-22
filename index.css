@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("./design/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+@font-face {
+    font-family: "Monserrat";
+    src: url("./design/Montserrat-VariableFont_wght.ttf");
+}
+
+body{
+    font-family: 'Fraunces';
+    min-height: 100vh;
+    height: 100%;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.875rem
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.625rem;    
+    color:hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: row;
+    max-width: 33.75rem;
+    min-height: 25rem;
+}
+
+main aside{
+    border-bottom-left-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+    width: 50%;
+}
+
+main aside picture img{
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 0.625rem;
+    border-top-left-radius: 0.625rem;
+    width: 100%;
+    height: 100%;
+}
+
+main section{
+    padding: 2rem;
+    width: 50%;
+}
+
+main section header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-height: 6.25rem;
+}
+
+main section h2{
+    color:hsl(228, 12%, 48%);
+    font-size: 0.875rem;
+    letter-spacing: 0.125rem;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+
+main section header h1{
+    color: hsl(212, 21%, 14%);
+    font-size: 1.875rem;
+    font-weight:700;
+    line-height: 2rem;
+}
+
+main section p{
+    color:hsl(228, 12%, 48%);
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight:700;
+    font-family: 'Monserrat';
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer article{
+    margin: 1.25rem 0;
+}
+
+footer article strong{
+    color:hsl(158, 36%, 37%);
+    font-size: 1.625rem;
+    padding-right: 1.125rem;
+}
+
+footer article sup{
+    color: hsl(228, 12%, 48%);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-decoration:line-through
+}
+
+main section button{
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.3125rem;
+    color: hsl(0, 0%, 100%);
+    min-height: 2.8125rem;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main section button:hover{
+    background-color: #224b3c;
+}
+
+.attribution { 
+    font-size: 16px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 375px) {
+    main{
+        flex-direction: column;
+        margin: 1.25rem;
+        border-radius: 0.625rem;
+    }
+
+    main aside{
+        width: 100%;
+    }
+    
+    main aside picture img{
+        border-top-right-radius: 0.625rem;
+        background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 0;        
+    }
+    
+    main section{
+        width: 100%;
+        padding: 1.375rem;
+    }
+
+    main section header h1{
+        font-size: 2.125rem;
+        font-weight:700;
+        line-height: 2rem;
+    }
+
+    main section header p{
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        font-weight:500;
+    }
+
+    footer article strong{
+        font-size: 2rem;
+    }
+
+}
