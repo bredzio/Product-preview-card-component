@@ -123,10 +123,6 @@ main section button{
     gap: 10px;
 }
 
-main section button:hover{
-    background-color: #224b3c;
-}
-
 .attribution { 
     font-size: 16px; 
     text-align: center; 
@@ -173,6 +169,14 @@ main section button:hover{
 
     footer article strong{
         font-size: 2rem;
+    }
+
+}
+
+@media (hover: hover) {
+
+    main section button:hover{
+        background-color: #224b3c;
     }
 
 }
